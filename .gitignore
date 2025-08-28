@@ -1,0 +1,39 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Ignore virtual environments
+torchenv/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore large data folders
+data/raw_videos/
+data/video_data/
+data/detections/
+data/features/
+data/results/
+
+# Ignore logs and outputs
+logs/
+*.log
+
+# Ignore model weights (can be re-downloaded)
+*.pt
+*.pth
+*.onnx
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
