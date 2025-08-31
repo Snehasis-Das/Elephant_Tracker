@@ -48,7 +48,7 @@ def split_video(input_path, output_dir, clip_counter):
 
     return clip_counter
 
-def main():
+def create_clip_from_raw():
     clip_counter = 0
     for filename in os.listdir(RAW_DIR):
         if filename.lower().endswith(".mp4"):
@@ -57,4 +57,4 @@ def main():
             clip_counter = split_video(input_path, OUT_DIR, clip_counter)
 
 if __name__ == "__main__":
-    main()
+    create_clip_from_raw()

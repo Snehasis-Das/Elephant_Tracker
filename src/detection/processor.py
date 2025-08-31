@@ -45,7 +45,7 @@ def process_video(video_path, detector, tracker):
 
     cap.release()
 
-def main():
+def detect_elephants():
     os.makedirs(OUT_DIR, exist_ok=True)
 
     detector = ElephantDetector(model_name="yolov8n.pt")
@@ -60,4 +60,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    detect_elephants()

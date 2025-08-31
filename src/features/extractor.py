@@ -24,7 +24,7 @@ class FeatureExtractor:
         return vecs[0]  # take the first vector
 
 
-def main():
+def extract_features():
     extractor = FeatureExtractor()
     files = [f for f in os.listdir(IN_DIR) if f.lower().endswith(".png")]
     print(f"Found {len(files)} images in {IN_DIR}")
@@ -48,4 +48,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    extract_features()
